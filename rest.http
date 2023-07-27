@@ -1,0 +1,42 @@
+GET http://localhost:3000
+
+###
+GET http://localhost:3000/abc
+
+###
+POST  http://localhost:3000/user/register
+Content-Type: application/json
+
+{
+    "email": "vananh@gmail.com",
+    "password": "123456"
+}
+
+###
+POST http://localhost:3000/user/login
+Content-Type: application/json
+
+{
+    "email": "vananh@gmail.com",
+    "password": "123456"
+}
+
+###
+GET http://localhost:3000/user/getlists
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NGJlM2M1YzU3ZmVmMWU0M2ExN2MwYmUiLCJpYXQiOjE2OTAyMDMzMDMsImV4cCI6MTY5MDIwNjkwM30.qX272cAROIUV65GaaVrs9oCRBpIVjq2GJQaUsIl4qPU
+
+###
+POST http://localhost:3000/user/refresh-token
+Content-Type: application/json
+
+{
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NGJlM2M1YzU3ZmVmMWU0M2ExN2MwYmUiLCJpYXQiOjE2OTAyNTc3OTcsImV4cCI6MTcyMTgxNTM5N30.wEum1e_UcYmUMu9pWenwJsQSOhOjOSu3nRe7K0vpNH4"
+}
+
+###
+DELETE http://localhost:3000/user/logout
+Content-Type: application/json
+
+{
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NGJlM2M1YzU3ZmVmMWU0M2ExN2MwYmUiLCJpYXQiOjE2OTAyNTc4MDksImV4cCI6MTcyMTgxNTQwOX0.AOLVLd5mgwp3bynR7XfRk2tw9i_WmHv9ERGmmJKJc10"
+}
