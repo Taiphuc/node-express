@@ -4,7 +4,7 @@ const route = require('./Routes/User.router')
 const createError = require('http-errors')
 require('dotenv').config()
 // require('./Helpers/connections_mongodb')
-// require('./Helpers/connections_redis')
+require('./Helpers/connections_redis')
 
 app.get('/', (req, res, next) => {
     res.send('Home page')

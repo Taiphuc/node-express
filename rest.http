@@ -23,7 +23,7 @@ Content-Type: application/json
 
 ###
 GET http://localhost:3000/user/getlists
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NGJlM2M1YzU3ZmVmMWU0M2ExN2MwYmUiLCJpYXQiOjE2OTAyMDMzMDMsImV4cCI6MTY5MDIwNjkwM30.qX272cAROIUV65GaaVrs9oCRBpIVjq2GJQaUsIl4qPU
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NGJlM2M1YzU3ZmVmMWU0M2ExN2MwYmUiLCJpYXQiOjE2OTAyMDMzMDMsImV4cCI6MTY5MDIwNjkwM30.qX272cAROIUV65GaaVrs9oCRBpIVjq2GJQaUsIl4qPU
 
 ###
 POST http://localhost:3000/user/refresh-token
