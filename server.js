@@ -13,7 +13,7 @@ app.get('/', (req, res, next) => {
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
-app.use('/user', route)
+app.use('/api', route)
 
 app.use((req, res, next) => {
     // const error = new Error('Not Found')
